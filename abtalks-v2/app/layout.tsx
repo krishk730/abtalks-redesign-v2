@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import { AppShell } from "@/components/layout/app-shell";
+import { ChallengeProvider } from "@/lib/challenge-context";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -35,7 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <body>
-        <AppShell>{children}</AppShell>
+        <ChallengeProvider>
+          <AppShell>{children}</AppShell>
+        </ChallengeProvider>
       </body>
     </html>
   );
