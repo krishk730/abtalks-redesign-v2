@@ -16,7 +16,8 @@
   --color-accent-strong: 221 101 41; /* #DD6529 — accent hover/active */
   --color-accent-soft: 252 232 219; /* #FCE8DB — accent tint background */
   --color-border: 231 225 214; /* #E7E1D6 — soft 1px borders */
-  --color-positive: 63 125 88; /* #3F7D58 — reserved for proof-complete states */
+  --color-positive: 63 125 88; /* #3F7D58 — proof-complete / success states */
+  --color-negative: 178 66 53; /* #B24235 — warm, muted error red for validation states */
 }
 
 * {
